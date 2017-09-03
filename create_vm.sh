@@ -143,6 +143,7 @@ install_vm(){
 			rm -f "$diskpath"
 		fi
 	fi
+	virsh start "$vmname"
 }
 
 # usage:
