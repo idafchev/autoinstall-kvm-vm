@@ -1,5 +1,5 @@
 # autoinstall-kvm-vm
-Shell scripts which automate the installation of KVM virtual machines. They are mainly for my personal use but cant easily be changed to suit your needs.
+Shell scripts which automate the installation of KVM virtual machines. They are mainly for my personal use but can easily be changed to suit your needs.
 
 The default user is 'iliya', and the current password for the root and user accounts in the kickstart template is 'test' so you should probably change those.
 
