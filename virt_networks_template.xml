@@ -1,0 +1,9 @@
+<network>
+  <name>%networkname%</name>
+%forward%
+  <domain name='%networkname%'/>
+  <ip address='%firstip%' netmask='%netmask%'>
+%dhcp%
+  </ip>
+</network>
+
