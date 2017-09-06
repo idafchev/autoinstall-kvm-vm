@@ -1,5 +1,5 @@
 # autoinstall-kvm-vm
-Shell scripts which automate the installation of KVM virtual machines. They are **mainly for my personal use** but can easily be changed to suit your needs.
+Shell scripts which automate the installation of KVM virtual machines. They are **mainly for my personal use** so might not work for you without some tweaking.
 
 The default user is 'iliya', and the current password for the root and user accounts in the kickstart template is 'test' so you should probably change those.
 
@@ -9,5 +9,3 @@ To generate a new hashed password use the command below (or change the ks_templa
 python -c 'import crypt,getpass;pw=getpass.getpass();print(crypt.crypt(pw) if (pw==getpass.getpass("Confirm: ")) else exit())'
 ```
 The oneliner above was taken from https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Installation_Guide/sect-kickstart-syntax.html
-
-The VMs have pre-configured static IP address, so after the installation you can immediately SSH to them (if the virtual network is in 'route' mode, or you ssh from another VM in the same virtual network).
