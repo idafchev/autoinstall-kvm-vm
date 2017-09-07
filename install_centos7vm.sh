@@ -81,7 +81,7 @@ if [[ "$(virsh net-list --all --name | grep -w "${network_name}")" != "" ]]; the
 	fi
 else
 	sh ./create_virtnet.sh -n "$network_name" -m "nat" -a "$vm_gateway_ip" -p "$vm_network_prefix" -i "wlp8s0"  -f "" -l "" 2>/dev/null
-	if [ $exit_code -ne 0 ]; then
+	if [ $? -ne 0 ]; then
 		print_error "[-] ERROR: Couldn't create network!."
 		exit 1
 	fi
